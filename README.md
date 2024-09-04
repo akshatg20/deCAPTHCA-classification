@@ -12,3 +12,9 @@ We have been provided with 2000 training images (see the subdirectory train) in 
 addition to this we have also been given reference images (see the subdirectory reference in the assignment archive) for all 24 characters in a standardized form with a white background. This is to simply give a handy reference on what unrotated images of characters look like if all color information is removed.
 
 Our task is to design an algorithm that can take a set of such 500 × 150 images and return the code present in that image.
+
+## Approach
+
+### Background Pixel Identification
+As, the background is lighter than the foreground, so, we took some pointers from this article1. So first of all we convert our image to HSV format using cv2.cvtColor(< BGR image >
+, cv2.COLOR_BGR2HSV ). So, for an input image *0.png* we have the image in HSV format as follows
