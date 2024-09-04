@@ -15,6 +15,4 @@ Our task is to design an algorithm that can take a set of such 500 × 150 images
 
 ## Approach
 
-### Background Pixel Identification
-As, the background is lighter than the foreground, so, we took some pointers from this article1. So first of all we convert our image to HSV format using cv2.cvtColor(< BGR image >
-, cv2.COLOR_BGR2HSV ). So, for an input image *0.png* we have the image in HSV format as follows
+The approach has been detailed in the report present in the repository.
